@@ -5,7 +5,7 @@ use warnings;
 require Exporter;
 
 our @EXPORT_OK = qw(keysize blocksize new encrypt decrypt);
-our $VERSION = '1.0.0';
+our $VERSION = '1.0.1';
 our @ISA = qw(Exporter);
 
 require XSLoader;
@@ -33,6 +33,8 @@ Crypt::Loki97 - Crypt::CBC compliant block cipher
 
 Loki97 is 128-bit block cipher that accepts a variable-length key. It
 was designed by Lawrie Brown, Josef Pieprzyk, and Jennifer Seberry.
+
+The default key length in this implementation is 128 bits.
 
 Loki97 was one of the 15 candidates for the AES.
 
